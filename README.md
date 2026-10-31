@@ -64,24 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-IOConnex provides one‑click MCP (Machine‑Control‑Protocol) superpowers for AI agents, offering web search, document conversion, and price tracking services through simple snippet configuration. The platform hosts three MCP servers—search, convert, and prices—delivered without accounts or API keys, targeting developers integrating AI tools. It offers a free tier with 50 credits per month and a paid Pro plan at $9/month, emphasizing speed, cost‑efficiency, and ease of use for AI‑driven applications.
+IOConnex LLC builds one‑click hosted MCP (Machine‑Control‑Protocol) servers that give AI agents real tools and payment capabilities. Their services include web search, document conversion, and price tracking, all accessible via a single configuration snippet with no account or API keys. Founded in 2026 in Arizona, IOConnex offers open‑source, security‑hardened servers, micropayment support via USDC and Stripe, and a roadmap of additional services such as cross‑chain billing and agent escrow.
 
-**Areas:** Company · AI · MCP · Search · Document-Conversion · Price-Tracking
+**Areas:** Company · AI · MCP · Tools · Payments · OpenSource
 
 ## ioconnex-dev on APIs.io
 
 Everything profiled for ioconnex-dev is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ioconnex-dev/](https://apis.io/providers/ioconnex-dev/)** — or go straight to one of the APIs or properties below.
 
-### APIs (8)
+### APIs (6)
 
-- [ioconnex-dev Affiliate API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-affiliate-api/) — The Affiliate API from ioconnex-dev — 1 operation(s) for affiliate.
-- [ioconnex-dev Billing API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-billing-api/) — The Billing API from ioconnex-dev — 6 operation(s) for billing.
+- [Price Tracker](https://apis.io/apis/ioconnex-dev/price-tracker/) — Price tracking API: check_price (SSRF-guarded) + make_affiliate_link.
+- [Web Search](https://apis.io/apis/ioconnex-dev/web-search/) — Web search API: search_web (Tavily) + fetch_url (SSRF-guarded).
+- [ioconnex-dev Billing API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-billing-api/) — The Billing API from ioconnex-dev — 5 operation(s) for billing.
 - [ioconnex-dev Convert API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-convert-api/) — The Convert API from ioconnex-dev — 4 operation(s) for convert.
-- [ioconnex-dev Fetch API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-fetch-api/) — The Fetch API from ioconnex-dev — 1 operation(s) for fetch.
 - [ioconnex-dev Health API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-health-api/) — The Health API from ioconnex-dev — 1 operation(s) for health.
-- [ioconnex-dev Paid API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-paid-api/) — The Paid API from ioconnex-dev — 3 operation(s) for paid.
-- [ioconnex-dev Price API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-price-api/) — The Price API from ioconnex-dev — 1 operation(s) for price.
-- [ioconnex-dev Search API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-search-api/) — The Search API from ioconnex-dev — 1 operation(s) for search.
+- [ioconnex-dev Paid API](https://apis.io/apis/ioconnex-dev/ioconnex-dev-paid-api/) — The Paid API from ioconnex-dev — 1 operation(s) for paid.
 
 ### Published properties
 
@@ -93,18 +91,14 @@ Which operations an agent can call, which act, and which need a human in the loo
 
 - [Ioconnex Dev Agentic Access](https://apis.io/agentic-access/ioconnex-dev/ioconnex-dev-agentic-access/)
 
-#### JSON Schema (9)
+#### JSON Schema (5)
 
 The data models the API reads and writes.
 
-- [AffiliateRequest](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-affiliate-request/)
 - [Body_convert_ocr_convert_ocr_post](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-body-convert-ocr-convert-ocr-post/)
 - [Body_convert_pdf_convert_pdf_post](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-body-convert-pdf-convert-pdf-post/)
 - [Body_convert_pdf_paid_convert_pdf_post](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-body-convert-pdf-paid-convert-pdf-post/)
 - [Body_convert_spreadsheet_convert_spreadsheet_post](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-body-convert-spreadsheet-convert-spreadsheet-post/)
-- [FetchRequest](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-fetch-request/)
-- [PriceRequest](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-price-request/)
-- [SearchRequest](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-search-request/)
 - [UrlRequest](https://apis.io/schemas/ioconnex-dev/ioconnex-dev-url-request/)
 
 #### JSON-LD (1)
@@ -131,30 +125,36 @@ Published plans, tiers and prices.
 
 - [Ioconnex Dev Plans Pricing](https://apis.io/plans/ioconnex-dev/ioconnex-dev-plans-pricing/)
 
+#### Rate limits (1)
+
+Published request limits.
+
+- [Ioconnex Dev Rate Limits](https://apis.io/rate-limits/ioconnex-dev/ioconnex-dev-rate-limits/)
+
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://ioconnex.dev/)
-- [API reference](https://convert.ioconnex.dev/)
+- [Getting started](https://ioconnex.dev/#install)
 - [Pricing](https://ioconnex.dev/#pricing)
 - [Terms of service](https://search.ioconnex.dev/legal/terms)
 - [Privacy policy](https://search.ioconnex.dev/legal/privacy)
 
 ## API Evangelist rating
 
-**Kin Score 41.4** — developing · rubric 0.25.0 · scored 2026-10-29
+**Kin Score 38.6** — thin · rubric 0.25.0 · scored 2026-10-29
 
 | Facet | Score |
 |---|---|
-| Discoverability | 67.9 |
-| Contract quality | 49.6 |
+| Discoverability | 65.0 |
+| Contract quality | 46.9 |
 | Contract governance | 70.9 |
-| Operational transparency | 0.0 |
-| Developer ergonomics | 7.1 |
-| Access clarity | 60.0 |
+| Operational transparency | 18.9 |
+| Developer ergonomics | 18.3 |
+| Access clarity | 31.6 |
 
-**Agent readiness 29.8** — agent-ready
+**Agent readiness 35.4** — agent-ready
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -166,9 +166,9 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Idempotency | — |
 | Error Semantics | verified |
 | OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
-| Agent Skills | — |
+| Agent Skills | unknown |
 | Well Known Catalog | — |
 | Consent Identity | — |
 | Agent Card | — |
@@ -180,7 +180,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Pagination Ratio | na |
 | Operation Distinctiveness | distinct |
 
-**Regulatory alignment 17.3** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 15.8** — Payments
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ioconnex-dev/](https://apis.io/providers/ioconnex-dev/).
 
